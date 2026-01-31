@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Great Thug Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<div class="video-bg">
+    <video autoplay muted loop playsinline>
+        <source src="From KlickPin CF naruto video _ Kilitli ekran duvar kağıdı Telefon duvar kağıdı Anime gözlerNinès.mp4" type="video/mp4">
+        <source src="From KlickPin CF naruto video _ Kilitli ekran duvar kağıdı Telefon duvar kağıdı Anime gözlerNinès.mp4" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.video-bg{
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  object-fit: cover;
+}
+.video-bg video{
+  width: 100%;
+  height: auto;
+  display: grid;
+  object-fit: cover;
+}
+body{
+    height:100vh;
+   
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter: blur(4px);
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    width:100%;
+    padding:20px;
+}
+
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,0.2);
+    overflow:hidden;
+    margin:0 auto 20px;
+    box-shadow:0 0 30px #ff004c;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.title{
+    font-family:'Orbitron', sans-serif;
+    font-size:40px;
+    font-weight:700;
+    background:linear-gradient(90deg,#004cff,#b100ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    letter-spacing:3px;
+}
+
+.tagline{
+    margin-top:10px;
+    font-size:18px;
+    opacity:0.8;
+    letter-spacing:2px;
+}
+
+.socials{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.social{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    transition:0.3s;
+    cursor:pointer;
+    backdrop-filter:blur(10px);
+}
+
+.social:hover{
+    transform:translateY(-6px);
+    background:#ff004c;
+}
+
+.bottom-nav{
+    position:absolute;
+    bottom:15px;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    opacity:0.9;
+}
+
+.nav-icon{
+    font-size:26px;
+}
+
+.sound-btn{
+    position:absolute;
+    right:20px;
+    bottom:100px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    backdrop-filter:blur(10px);
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <div class="avatar">
+        <img src="arpit.jpg" alt="avatar">
+    </div>
+
+    <div class="title">Arpit Rana</div>
+    <div class="tagline">I don't seek power - I am power !</div>
+
+    <div class="socials">
+        <div class="social"><img src="ins.png" width="50px"><a href="https://www.instagram.com/_arpit_rana_07?igsh=MTBqcDlmZWdxOHo1YQ=="></a></div>
+        <div class="social"><img src="x.png" width="50px"><a href="https://x.com/Arpit_rana07"></a></div>
+        <div class="social"><img src="snap.png" width="50px"><a href="https://www.snapchat.com/add/arpit_rana07?share_id=xao2QbMfjtQ&locale=en-GB"></a></div>
+        <div class="social"><img src="yt.png" width="50px"><a href="https://youtube.com/@pheonix_077?si=EDL9gfDPxx3w0SsJ"></a></div>
+        <div class="social"><img src="dis.png" width="50px"><a href="https://discord.gg/2qG3DCPC"></a></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
