@@ -151,6 +151,11 @@ body{
 </style>
 </head>
 
+
+<!-- Background audio -->
+<audio id="audio" loop>
+  <source src="mega.mp3" type="audio/mpeg">
+</audio>
 <body>
 
 <div class="overlay"></div>
@@ -172,17 +177,19 @@ body{
         <div class="social"><a href="https://discord.gg/2qG3DCPC"><img src="dis.png" width="50px"></a></div>
     </div>
 
-</div>
-<audio id="bg" src="mega.mp3" autoplay loop muted></audio>
 
 <script>
-  document.addEventListener("click", () => {
-    const audio = document.getElementById("bg");
-    audio.muted = false;
-    audio.play();
-  }, { once: true });
-</script>
+//   const enter = document.getElementById("enter");
+  const audio = document.getElementById("audio");
+//   const content = document.getElementById("content");
 
+  enter.addEventListener("click", () => {
+    audio.volume = 0.6;
+    audio.play().catch(() => {});
+    enter.style.display = "none";
+    content.style.display = "flex";
+  });
+</script>
 
 
 </body>
