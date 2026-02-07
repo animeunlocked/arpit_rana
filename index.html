@@ -173,16 +173,16 @@ body{
     </div>
 
 </div>
-    <button id="play">Play sound</button>
-
-<audio id="audio" src="mega.mp3"></audio>
+<audio id="bg" src="mega.mp3" autoplay loop muted></audio>
 
 <script>
-  document.getElementById("play").addEventListener("click", () => {
-    const audio = document.getElementById("audio");
+  document.addEventListener("click", () => {
+    const audio = document.getElementById("bg");
+    audio.muted = false;
     audio.play();
-  });
+  }, { once: true });
 </script>
+
 
 
 </body>
