@@ -173,9 +173,16 @@ body{
     </div>
 
 </div>
-<audio autoplay muted loop>
-  <source src="mega.mp3" type="audio/mpeg">
-</audio>
+    <button id="play">Play sound</button>
+
+<audio id="audio" src="mega.mp3"></audio>
+
+<script>
+  document.getElementById("play").addEventListener("click", () => {
+    const audio = document.getElementById("audio");
+    audio.play();
+  });
+</script>
 
 
 </body>
