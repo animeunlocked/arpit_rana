@@ -152,11 +152,7 @@ body{
 </head>
 
 
-<!-- Background audio -->
-<audio id="audio" loop>
-  <source src="mega.mp3" type="audio/mpeg">
-</audio>
-<body>
+
 
 <div class="overlay"></div>
 
@@ -178,18 +174,12 @@ body{
     </div>
 
 
-<script>
-//   const enter = document.getElementById("enter");
-  const audio = document.getElementById("audio");
-//   const content = document.getElementById("content");
+<audio autoplay loop>
+  <source src="mega.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-  enter.addEventListener("click", () => {
-    audio.volume = 0.6;
-    audio.play().catch(() => {});
-    enter.style.display = "none";
-    content.style.display = "flex";
-  });
-</script>
+
 
 
 </body>
